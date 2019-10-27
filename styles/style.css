@@ -84,7 +84,11 @@ h1 {
 }
 
 .tools {
-    margin-bottom: 92px;
+    margin-bottom: 40px;
+}
+
+.color {
+    margin-bottom: 40px;
 }
 
 .tools__item,
@@ -111,4 +115,55 @@ h1 {
     margin-top: 8px;
     margin-bottom: 8px;
     background: rgba(0, 0, 0, 0.12);
+}
+
+/* CANVAS */
+
+.canvas-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.canvas {
+    outline: double;
+    height: 512px;
+    width: 512px;
+    margin-right: 200px;
+}
+  
+.sizes {
+    height: 150px;
+}
+  
+.size-item {
+    border: 1px solid lightgray;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    box-shadow: 0 0 5px 0 lightgray;
+    display: flex;
+    align-items: center;
+    width: 196px;
+    height: 48px;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(), 0, 0, 0.541327;
+}
+  
+.size-item:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease all;
+    border-color: grey;
+    box-shadow: 0 0 5px 0 grey;
+}
+  
+.size-item.medium {
+    border-color: grey;
+    box-shadow: 0 0 5px 0 grey;
+}
+
+ul {
+    list-style: none;
 }
