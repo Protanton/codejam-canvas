@@ -62,7 +62,7 @@ function reDraw(canvas, url, newSize) {
         })
         .then(image => {
           image.onload = () => {
-            ctx.drawImage(image, CANVAS_SIZE / 4, CANVAS_SIZE / 4);
+            ctx.drawImage(image, 0, 0, CANVAS_SIZE, CANVAS_SIZE);
           }
         });
     } else {
